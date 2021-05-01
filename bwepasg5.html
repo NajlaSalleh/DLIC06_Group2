@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Najla Syazwana Binti Hj Md Salleh">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Tech Template</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bwepasg5.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <nav>
+  <a href="#">Home</a>
+  </nav>
+
+<!--intro page-->
+  <div class="container-fluid">
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 logo">
+      <b><span>T</span><span>e</span><span>c</span><span>h</span>
+      <span>T</span><span>em</span><span>p</span><span>l</span><span>ate</span>
+      <br/> <span id="Minimalistic">Minimalistic design</span>
+    </b>
+   </div>
+</div>
+</div>
+
+
+<!--page description-->
+ <div class="container">
+   <div class="row">
+     <div class="mt-5 col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <p id="thistemp">This minimalistic template is especially made for your tech company's e-card
+         invitation. Pick the events, fill the fields, and it will do
+         the rest! Please note that the structure of the template card and its sizing will be different in desktop view and mobile view.
+        </p>
+     </br>
+   </div>
+  </div>
+</div>
+
+<br><br><br>
+
+
+    <div class="container">
+        <form class="mb-5">
+            <div class="row g-3">
+                <div class="col-md-3 col-lg-3">
+                    <h3>Favourited inputs</h3>
+                    <div id="favouritedCards"></div>
+                </div>
+
+                <div class="col-md-9 col-lg-9 Event">
+                    <h3 id="textcontent">Card textual content</h3>
+
+                    <div class="mb-2">
+                        <label class="form-label">Event Name</label>
+                        <div>
+                          <select class="input-black"id="select">
+                            <option></option>
+                            <option>Consumer Electronics Show</option>
+                            <option>IT Fundraiser Charity</option>
+                            <option>Developer week</option>
+                            <option>Cybersecurity and strategies</option>
+                            <option>Annual virtual conference</option>
+                            <option>Tech Research and Development</option>
+                            <option>Tech Showcase</option>
+                            <option>Tech Week</option>
+                            <option>Web Summit</option>
+                            <option>Tech Conference</option>
+                            <option>Tech Seminar</option>
+                            <option>Articial Intelligence Launch</option>
+                            <option>Virtual Reality Launch</option>
+                            <option>Shareholders' Meeting</option>
+                            <option>IT Convention</option>
+                            <option>Tech Expo</option>
+                            <option>Tech Sponsorships and Grant</option>
+                            <option>Virtual Reality Launch</option>
+                          </select>
+                        </div>
+
+                     </div>
+
+                    <div class="mb-2">
+                        <label for="inputRecipientName" class="form-label">Recipient name</label>
+                        <input type="text" class="form-control input-black" id="inputRecipientName" placeholder="Name of recipient">
+                    </div>
+
+                    <div class="mb-2">
+                        <label for="inputEventDate" class="form-label">Event date</label>
+                        <input type="date" class="form-control input-black" id="inputEventDate">
+                    </div>
+                    <div class="mb-2">
+                        <label for="inputCustomMsg" class="form-label">Custom message</label>
+                        <div class="d-grid gap-2">
+                            <textarea id="inputCustomMsg" placeholder="Your custom message" class="form-control input-black"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="mb-2">
+                        <h3>Styling</h3>
+                        <div class="mb-2">
+
+                            <div>
+                                <label for="inputBgCol" class="col-form-label">Background color (staying black is recommended)</label>
+                            </div>
+
+                            <div>
+                                <input type="color" id="inputBgCol" value="#ffffff">
+                            </div>
+
+                        </div>
+
+                        <div class="mb-2">
+
+                            <div>
+                                <label for="inputGreetTxtCol" class="col-form-label">Event name text color</label>
+                            </div>
+
+                            <div>
+                                <input type="color" id="inputGreetTxtCol" value="#999999">
+                            </div>
+
+                        </div>
+                    </div>
+                    </div>
+
+
+                </div>
+          </div>
+
+          <div class="row">
+            <div class="d-grid gap-1 mb-5">
+                <br/>
+                <button type="submit" class="btn btn-lg" onclick="return preview()">Preview</button>
+                <button type="submit" class="btn btn-lg" onclick="return markAsFav()">Mark as favorite</button>
+            </div>
+          </div>
+
+      </form>
+
+<!--container for draggable images-->
+<div class="container">
+        <div class="row">
+            <div class="row-sm-12 mx-auto">
+                <h3>Draggable company logos</h3>
+                 <img src="assets/brushjamban.gif" alt="logo1" class="drag" draggable="true" id="img0" ondragstart="drag(event)" >
+                 <img src="assets/blackparticle.gif" alt="logo2" class="drag" draggable="true" id="img1" ondragstart="drag(event)">
+                 <img src="assets/blueorb.png" alt="logo3" class="drag" draggable="true" id="img2" ondragstart="drag(event)">
+                 <img src="assets/Machina.gif" alt="logo4" class="drag" draggable="true" id="img4" ondragstart="drag(event)">
+                 <img src="assets/NodeLock.gif" alt="logo5" class="drag" draggable="true" id="img4" ondragstart="drag(event)">
+                 <img src="assets/cluster2.gif" alt="logo6" class="drag" draggable="true" id="img5" ondragstart="drag(event)">
+            </div>
+        </div>
+
+<!--container for preview title-->
+
+    <div class="container">
+        <div class="row">
+      <h3 class="py-3 col-sm-12" id="previewTitle">Preview</h3>
+        </div>
+   </div>
+
+<!--container for preview template-->
+        <div class="container">
+            <div class="row">
+                <div class="p-5 pb-0 col-sm-12 gradient-border preview-container ">
+
+                <div id="tmpl-one-preview" class=" tmpl p-2 col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+               <!--part that allows images to be dragged over-->
+                    <div class="preview-overlay" id="previewOverlay" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+                    <h6 class="greet-msg">CARD INVITATION</h6>
+                    <h2 class="greet-msg" id="greetMsg">Event Name</h2>
+
+                    <div class="">
+                        <strong>To:</strong><br>
+
+                        <span class="recipient-name" id="recipientName">Recipient Name</span>
+                    </div>
+
+
+                    <div class="">
+                        <strong>Date:</strong><br>
+                        <span class="event-date" id="eventDate">01 January 2021</span>
+                    </div>
+
+
+                      <br>
+
+                    <div class="/// custom-msg">
+                        <p id="customMsg">My very own custom message lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                            est laborum.
+                        </p>
+                    </div>
+                    <br>
+
+
+            </div>
+
+
+        </div>
+  </div>
+  </div>
+
+  <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mt-5">
+          <p>Click 'Send card' button to get directed to your recipient's details</p>
+            <button type="button" name="button" style>Send card</button>
+        </div>
+      </div>
+ </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="js/bwepasg5.js"></script>
+</body>
+
+<!--a very very special thanks to Habibah Mahadi for teaching me <3-->
+
+<!--References:
+
+Methods:
+For page responsiveness: Bootstrap (jsdelivr); grid system, spacing, and alignment.
+The responsiveness was tested on the Responsive Design Mode (Inspect Element)
+Mark as fav: using Local storage and array method (append child)
+Drag and drop: HTML5's new feature drag and drop
+
+Outside code sources:
+
+
+
+
+</html>

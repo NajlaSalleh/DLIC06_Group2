@@ -1,0 +1,198 @@
+body{
+  font-family: 'Abel', sans-serif;
+  color:lightgray;
+  background-color: black;
+/*  background: #060e1b;*/
+}
+
+input{
+  outline: none;
+  border: none;
+  color:#1DE9B6;
+  border-bottom:2px #1DE9B6 solid;
+  width:80%;
+  background-color: black;
+  margin: 2px;
+}
+
+option{
+  color:#1DE9B6
+}
+
+#thistemp{
+  position: relative;
+  top: 300px;
+  left: 40px;
+  color:lightgray;
+}
+
+.title{
+  font-weight: bold;
+  font-size: 25px;
+  color: lightgray;
+  margin:0;
+  padding-bottom:5px;
+  }
+
+.list-sugg{
+  background-color: black;
+  color:cyan;
+  border-color: #1DE9B6;
+}
+
+
+/*let there be light code for card template*/
+
+
+#suruh-move{
+  display: inline-block;
+  position: relative;
+  top:1700px;
+  left:600px;
+  z-index: 1;
+}
+
+.atas{
+  position: relative;
+  z-index: 2;
+}
+
+
+
+/*star background
+
+       #star {
+        border: none;
+        height:700px;
+        //opacity: 0.5;
+         position: relative;
+         top:0;
+         left:0;
+         z-index: 0;
+      }
+
+        audio{
+          position: absolute;
+          z-index: 1;
+        }
+
+
+*/
+
+
+/*typing demo code from https://codepen.io/denic/pen/GRoOxbM*/
+
+.wrapper {
+  height: 100vh;
+  /*This part is important for centering*/
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: static;
+
+
+}
+
+.typing-demo {
+  color: #1DE9B6;
+  width: 52%;
+  animation: typing 3.5s steps(22), blink .2s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+
+
+.g-con{
+  position: relative;
+}
+
+.input-con{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+
+
+ /*#star {
+  border-radius: 10px;
+  position: relative;
+  top:200px;
+  z-index: 0;
+}
+
+ #dust{
+  position: relative;
+  top:200px;
+} */
+
+
+
+.boxform div {
+    position: relative;
+    top: 650px;
+    float: left;
+    clear: none;
+    border: 2px white solid;
+    border-radius: 10px;
+    width: 25%;
+    height: 550px;
+    margin:50px;
+    margin-left: 60px;
+  }
+
+
+  label{
+    width: 55%;
+    display: inline-block;
+  }
+
+
+  li{
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+  }
+
+  #template{
+    z-index: 0;
+    display: inline-block;
+    border: 0.5px solid cyan;
+    border-radius: 16px;
+    position: relative;
+    top: 800px;
+    background-image: url("../assets/everythingstarstuff.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 95%;
+    height:500px;
+    margin: 0;
+  }
+
+
+  button{
+    color:black;
+    border-color: #1DE9B6;
+    background-color: #1DE9B6;
+    width:100px;
+    height: 40px;
+  }

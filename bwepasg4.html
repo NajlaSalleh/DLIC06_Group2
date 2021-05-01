@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Najla Syazwana Binti Hj Md Salleh">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>Astronomy Template</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bwepasg4.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav>
+  <a href="#">Home</a>
+  </nav>
+
+
+  <div class="wrapper">
+  <div class="typing-demo">
+   Astronomy e-card invitation | Minimalist Design
+  </div>
+  </div>
+
+
+
+    <p id="thistemp">This e-card invitation's minimalistic template is especially made for your Astronomical events.
+    Pick the suggested greets, fill the fields, and it will do the rest!</p> </br>
+
+<!--fav container-->
+    <div class="container py-5">
+        <form class="mb-5">
+            <div class="row">
+                <div class="col-md-3 col-sm-4">
+                    <h3>Favourited inputs</h3>
+                    <div id="favouritedCards"></div>
+    </div>
+
+<!--Customization container: input textual contents and styling-->
+                <div class="col-md-6 col-sm-8 Event">
+                    <h3 id="textcontent">Card textual content</h3>
+
+                    <div class="mb-3">
+                        <label class="form-label">Event Name</label>
+                        <div>
+                          <select class="input-black" id="select">
+                            <option></option>
+                            <option>Astronomical Society Fundraiser Charity</option>
+                            <option>Astronomical Society Conference</option>
+                            <option>Astronomical Seminar</option>
+                            <option>Rocket Launch</option>
+                            <option>Space Research Conference</option>
+                            <option>International Astronomical Consortium</option>
+                            <option>Observatory symposium</option>
+                            <option>Virtual meeting</option>
+                            <option>New Observatory Launch</option>
+                            <option>Meteor Shower Counting</option>
+                          </select>
+                        </div>
+                 </div>
+
+                    <div class="mb-3">
+                        <label for="inputRecipientName" class="form-label">Recipient name</label>
+                        <input type="text" class="form-control input-black" id="inputRecipientName" placeholder="Name of recipient">
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputEventDate" class="form-label">Event date</label>
+                        <input type="date" class="form-control input-black" id="inputEventDate">
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputCustomMsg" class="form-label">Custom message</label>
+                        <div class="d-grid gap-2">
+                            <textarea id="inputCustomMsg" placeholder="Your custom message" class="form-control input-black"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <h3>Styling</h3>
+                        <div class="mb-3">
+                            <div>
+                                <label for="inputBgCol" class="col-form-label">Background color</label>
+                            </div>
+                            <div>
+                                <input type="color" id="inputBgCol" value="#ffffff">
+                            </div>
+                           </div>
+
+                        <div class="mb-3">
+                            <div>
+                                <label for="inputGreetTxtCol" class="col-form-label">Event name text color</label>
+                            </div>
+                            <div>
+                                <input type="color" id="inputGreetTxtCol" value="#999999">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+
+<!--buttons for launching customization-->
+                                                          <br/>
+            <div class="d-grid gap-4 col-4 mx-auto">
+                <button type="submit" class="btn btn-lg" onclick="return preview()">Preview</button>
+                <button type="submit" class="btn btn-lg" onclick="return markAsFav()">Mark as favorite</button>
+            </div>
+                                                      <br><br><br>
+
+
+        <div class="row">
+            <div class="row-sm-3 mx-auto">
+                <h3>Draggable images</h3>
+                <img src="planet/mercury.png" alt="mercury" class="drag-planet" draggable="true" id="img0" ondragstart="drag(event)">
+                <img src="planet/earth.png" alt="earth" class="drag-planet" draggable="true" id="img1"  ondragstart="drag(event)" >
+                <img src="planet/mars.png" alt="mars" class="drag-planet" draggable="true" id="img2" ondragstart="drag(event)">
+                <img src="planet/jupiter.webp" alt="jupiter" class="drag-planet" draggable="true" id="img3" ondragstart="drag(event)">
+                <img src="planet/saturn.png" alt="saturn" class="drag-planet" draggable="true" id="img4" ondragstart="drag(event)">
+                <img src="planet/uranus.png" alt="uranus" class="drag-planet" draggable="true" id="img5" ondragstart="drag(event)">
+                <img src="planet/neptune.png" alt="neptune" class="drag-planet" draggable="true" id="img6" ondragstart="drag(event)">
+                <img src="planet/moon.png" alt="moon" class="drag-planet" draggable="true" id="img7" ondragstart="drag(event)">
+            </div>
+
+            <div class="p-5 col-sm-12 preview-container">
+                <h3 id="previewTitle">Preview</h3>
+                  <div id="tmpl-one-preview" class="tmpl p-2">
+                      <div class="preview-overlay" id="previewOverlay" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                            <div class="pa-2">
+                                <strong>To:</strong><br>
+                                <span class="recipient-name" id="recipientName">Recipient Name</span>
+                                <hr width=100%>
+                            </div>
+
+                                  <h2 class="greet-msg mt-4" id="greetMsg">Event Name</h2>
+
+                            <div class="p-2">
+                            <strong>Date:</strong><br>
+                            <span class="event-date" id="eventDate">01 January 2021</span>
+                            </div>
+
+                                          <hr style="width:50%; margin:auto;" >
+
+                           <div class="px-5 py-3/// custom-msg">
+                             <p id="customMsg">My very own custom message lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                            est laborum.
+                            </p>
+                          </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="js/bwepasg4.js"></script>
+</body>
+
+</html>
