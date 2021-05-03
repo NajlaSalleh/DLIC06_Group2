@@ -1,0 +1,211 @@
+@font-face { font-family: Exodus; src: url('../fonts/ExodusDemo-Striped.otf'); }
+@font-face { font-family: Exodus; font-weight: bold; src: url('../fonts/ExodusDemo-Striped.otf');}
+@font-face { font-family: Despairs; src: url('../fonts/Despairs-X3Wxo.ttf'); }
+@font-face { font-family: Despairs; font-weight: bold; src: url('../fonts/Despairs-X3Wxo.ttf');}
+
+/*general*/
+
+body{
+  background-color: black;
+  color:lightgray;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+/*nav*/
+
+nav{
+  font-size: 2vw;
+}
+a{
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+a:hover{
+  color: cyan;
+}
+
+/*page description*/
+#thistemp{
+  text-align: center;
+  font-size: 2.5vmin;
+}
+
+
+
+
+/*drag and drop container*/
+.drag-planet {
+  max-width: 50px;
+}
+
+
+
+/*Input containers*/
+.Event{
+  border: 0.5px solid lightgray;
+  border-radius: 10px;
+}
+
+#favBlock{
+  max-height: 506px;
+  border: 0.5px solid lightgray;
+  border-radius: 15px;
+  overflow-y: scroll;
+}
+
+
+input{
+  background-color: black;
+  border-color: #1DE9B6;
+}
+
+.input-black{
+  background-color: black;
+  color: lightgray;
+  border: 1px #1DE9B6 solid;
+  border-radius: 5px;
+}
+
+.row{
+  text-align: center;
+}
+
+
+/*butttons*/
+button{
+  background-color: black;
+  border-color: #1DE9B6;
+  color:lightgray;
+  margin: auto;
+  border-radius: 4px;
+}
+
+.butang{
+  background-color: black;
+  color:lightgray;
+  border-color: #1DE9B6;
+}
+
+.btn{
+  background-color: black;
+  border-color: #1DE9B6;
+  color:lightgray;
+  margin: auto;
+}
+
+/*astronomy card template*/
+
+#previewTitle{
+  text-align: center;
+}
+
+.preview-container {
+  background-color: black;
+  color: lightgray;
+  max-width: 100%;
+  max-height: 100
+  margin: auto;
+  }
+
+
+.tmpl {
+    position: relative;
+    border: 0.5px solid cyan;
+    border-right: none;
+    border-left: none;
+    background-color: black;
+    color: lightgray;
+    text-align: center;
+  }
+
+}
+
+#recipientName {
+  font-style: italic;
+  font-size: 18px;
+}
+
+#eventDate{
+  font-style: italic;
+  font-size: 18px;
+}
+
+
+.tmpl .custom-msg p::first-letter {
+  font-size: 60px;
+  line-height: 0.5;
+  font-family: 'Pinyon Script', cursive;
+}
+
+.tmpl .preview-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.favItem {
+  font-size: 10px;
+  padding: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #999;
+  border-radius: 5px;
+}
+
+#greetMsg{
+  font-family:'Pinyon Script', cursive;
+  font-size: 50px;
+}
+
+hr{
+  background-color: white;
+}
+
+
+
+
+
+
+
+
+
+/*intro typing code from https://codepen.io/denic/pen/GRoOxbM*/
+
+.wrapper {
+  height: 100vh;
+  /*This part is important for centering*/
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: static;
+}
+
+.typing-demo {
+  color: lightgray;
+  width: 65%;
+  animation: typing 3.5s steps(22), blink .2s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2vw;
+}
+
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+/*intro typing code ends*/

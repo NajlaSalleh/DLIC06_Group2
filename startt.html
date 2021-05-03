@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" href="startt.css">
+    <link rel="stylesheet" href="css/startt.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,10 +24,10 @@
 
   <body id="body">
     <nav>
-      <a href="#">Home</a>
+      <a href="webs.html">HOME</a>
     </nav>
     <div class="start">
-    <img src="gif5.gif">
+    <img src="assets/gif5.gif">
     </div>
 
     <div class="nes-container with-title">
@@ -42,8 +42,15 @@
                     <div class="mb-3">
                         <label class="form-label">Greeting message (select 1)</label>
                         <div>
-                            <button class="nes-btn is-warning" type="button" id="greet-1" onclick="selectMsg(this.id)">Retro Games Fair <i class="bi bi-flower1"></i></button>
-                            <button class="nes-btn is-warning" type="button" id="greet-2" onclick="selectMsg(this.id)">Classic Game Fest<i class="bi bi-globe"></i></button>
+                          <select class="input-black"id="select">
+                            <option disabled selected>Select</option>
+                            <option value="Retro Games Fair">Retro Games Fair</option>
+                            <option value="Classis Game Fest">Classic Game Fest</option>
+                            <option value="Comic-con">Comic-Con</option>
+                            <option value="Gaming Expo">Gaming Expo</option>
+                          </select>
+                            <!--<button class="nes-btn is-warning" type="button" id="greet-1" onclick="selectMsg(this.id)">Retro Games Fair <i class="bi bi-flower1"></i></button>
+                            <button class="nes-btn is-warning" type="button" id="greet-2" onclick="selectMsg(this.id)">Classic Game Fest<i class="bi bi-globe"></i></button>-->
                         </div>
                     </div>
                     <div class="mb-3">
@@ -62,7 +69,7 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <h3>Styling</h3>
+                    <h5>Styling</h5>
                     <div class="row g-3 align-items-center">
                         <div class="col-auto">
                             <label for="inputBgCol" class="col-form-label">Background color</label>
@@ -82,28 +89,28 @@
                 </div>
             </div>
             <div class="d-grid gap-2 col-6 mx-auto">
-                <button type="submit" class="nes-btn is-primary" onclick="return preview()"><i class="bi bi-eye"></i> Preview</button>
+                <button type="submit" class="nes-btn is-warning" onclick="return preview()"><i class="bi bi-eye"></i> Preview</button>
                 <button type="submit" class="nes-btn is-primary" onclick="return markAsFav()"><i class="bi bi-star"></i> Mark as fav</button>
             </div>
         </form>
-        <div class="row">
-            <div class="col-sm-3">
+
+        <div class="container">
+            <div class="row">
+              <div class="row-xs-12 row-md-12 row-sm-12 row-lg-12 mx-auto">
               <h5>Draggable Stickers</h5>
-          <!--    <img src="gifs/dk.gif"  alt="gif01" class="draggable-img" draggable="true" id="img1" ondragstart="drag(event)">
-              <img src="../gifs/ghost.gif"  alt="gif01" class="draggable-img" draggable="true" id="img1" ondragstart="drag(event)">
-              <img src="../gifs/giphy.gif"  alt="gif01" class="draggable-img" draggable="true" id="img1" ondragstart="drag(event)">
-              <img src="../gifs/idk.gif"  alt="gif01" class="draggable-img" draggable="true" id="img1" ondragstart="drag(event)">
-              <img src="../gifs/idkk.gif"  alt="gif01" class="draggable-img" draggable="true" id="img1" ondragstart="drag(event)">
-              <img src="../gifs/mario.gif"  alt="gif01" class="draggable-img" draggable="true" id="img1" ondragstart="drag(event)">-->
-              <img src="assets/brushjamban.gif" alt="logo1" class="drag" draggable="true" id="img0" ondragstart="drag(event)" >
-              <img src="assets/blackparticle.gif" alt="logo2" class="drag" draggable="true" id="img1" ondragstart="drag(event)">
-              <img src="assets/blueorb.png" alt="logo3" class="drag" draggable="true" id="img2" ondragstart="drag(event)">
-              <img src="assets/Machina.gif" alt="logo4" class="drag" draggable="true" id="img4" ondragstart="drag(event)">
-              <img src="assets/NodeLock.gif" alt="logo5" class="drag" draggable="true" id="img4" ondragstart="drag(event)">
-              <img src="assets/cluster2.gif" alt="logo6" class="drag" draggable="true" id="img5" ondragstart="drag(event)">
+              <img src="gifs/dk.gif"  alt="error1" class="draggable-img" draggable="true"  ondragstart="drag(event)">
+              <img src="gifs/ghost.gif"  alt="error2" class="draggable-img" draggable="true"  ondragstart="drag(event)">
+              <img src="gifs/giphy.gif"  alt="error3" class="draggable-img" draggable="true"  ondragstart="drag(event)">
+              <img src="gifs/idk.gif"  alt="error4" class="draggable-img" draggable="true"  ondragstart="drag(event)">
+              <img src="gifs/idkk.gif"  alt="error5" class="draggable-img" draggable="true"  ondragstart="drag(event)">
+              <img src="gifs/mario.gif"  alt="error6" class="draggable-img" draggable="true"  ondragstart="drag(event)">
+              </div>
             </div>
-            <div class="p-5 col-sm-9 preview-container">
-                <h5 id="previewTitle"><i class="bi bi-eye"></i> Preview</h5>
+        </div>
+        <div class="container">
+          <div class="row">
+              <div class="col-sm-9 preview-container">
+                <h5 id="previewTitle">></i> Preview</h5>
                 <div id="tmpl-one-preview" class="tmpl p-2">
                     <div class="preview-overlay" id="previewOverlay" ondrop="drop(event)" ondragover="allowDrop(event)">
 
@@ -132,10 +139,13 @@
         </div>
 
     </div>
+            </div>
+</div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"></script>
-    <script src="startt.js"></script>
+    <script src="js/startt.js"></script>
 
   </body>
 </html>

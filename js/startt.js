@@ -19,7 +19,7 @@ function preview() {
             break;
         }
     }
-
+    var eventName = document.getElementById("select").value;
     var recName = document.getElementById("inputRecipientName").value;
     var eventDate = document.getElementById("inputEventDate").value;
     var customMsg = document.getElementById("inputCustomMsg").value;
@@ -210,3 +210,5 @@ function saveAsPic() {
     displayFavCards();
 
 })();
+
+// 404

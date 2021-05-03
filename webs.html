@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <link rel="stylesheet" href="css/webs.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="indexx.html"><img src="assets/nsipsg.png" alt="error"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-window-close" aria-hidden="true" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="webs.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>Go paperless with digital cards</h1>
+        <h2>Use less for more.</h2>
+        <br>
+          <a href="" class="hero-btn">Visit Us To Know More</a>
+      </div>
+    </section>
+
+    <!--course-->
+    <section class="course">
+      <h1>Templates</h1>
+
+      <div class="container">
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <h2>01</h2>
+              <h3>Formal</h3>
+              <p>Cards for your formal events</p>
+              <a href="Eformal.html">Wedding</a>
+              <a href="Eformal2.html">Reunion</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+            <div class="box">
+              <div class="content">
+                <h2>02</h2>
+                <h3>Informal</h3>
+                <p>Cards for your family and friends</p>
+                  <a href="2nd.html">Hari Raya</a>
+                  <a href="startt.html">Retro Games</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+                <div class="box">
+                  <div class="content">
+                    <h2>03</h2>
+                    <h3>Corporate</h3>
+                    <p>Cards for your companies and organizations</p>
+                      <a href="corporateone.html">Astronomy</a>
+                      <a href="corporatetwo.html">Tech</a>
+                  </div>
+                </div>
+              </div>
+      </div>
+
+
+
+<!--js toggle menu-->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu(){
+        navLinks.style.right = "0";
+      }
+      function hideMenu(){
+        navLinks.style.right = "-200px";
+      }
+
+    </script>
+  </body>
+  <p class="copyright">Nasi pisang ©</p>
+</html>
